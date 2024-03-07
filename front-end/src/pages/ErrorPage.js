@@ -13,7 +13,7 @@ export const ErrorPage = () => {
 
         // If we use json function from react router there is no need to parse the error
         // json does that for us.
-        message = error.data;
+        message = error.data.message;
     }
     if (error.status === 404) {
         title = 'Not found!';

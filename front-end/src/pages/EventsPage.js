@@ -1,8 +1,10 @@
 import { json, useLoaderData } from 'react-router-dom';
 import EventsList from '../components/EventsList';
 
-export const Events = () => {
-    const events = useLoaderData();
+export const EventsPage = () => {
+    const data = useLoaderData();
+    const events = data.events;
+    console.log(data);
 
 
     return (
@@ -13,8 +15,9 @@ export const Events = () => {
 }
 
 export const eventsLoader = async () => {
-    const response = await fetch('http://localhost:8070/eventsawd');
+    const response = await fetch('http://localhost:8070/events');
 
+    console.log(response);
     if (!response.ok) {
         // Throwing an error will bubble up to he closest error element in the router
         // throw new Response(

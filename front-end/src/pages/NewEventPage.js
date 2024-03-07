@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const NewEvent = () => {
+export const NewEventPage = () => {
     return (
        <h1>New Event</h1>
     );
