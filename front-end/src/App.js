@@ -1,6 +1,6 @@
 import MainNavigation from './components/MainNavigation';
 import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { Home, Events, EventDetail, NewEvent, EditEvent, EvetnsRoot } from './pages/index';
+import { Home, Events,ErrorPage, EventDetail, NewEvent, EditEvent, EvetnsRoot } from './pages/index';
 import { eventsLoader } from './pages/index';
 
 const Layout = () => {
@@ -18,6 +18,7 @@ const router = createBrowserRouter([
     {
         path: '/',
         element: <Layout />,
+        errorElement: <ErrorPage />,
         children: [
             { index: true, element: <Home /> },
             {

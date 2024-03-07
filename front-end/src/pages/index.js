@@ -1,4 +1,5 @@
 export * from './EditEvent';
+export * from './ErrorPage';
 export * from './EventDetail';
 export * from './Events';
 export * from './EvetnsRoot';
