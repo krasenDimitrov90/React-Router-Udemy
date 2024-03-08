@@ -1,7 +1,7 @@
 import MainNavigation from './components/MainNavigation';
 import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { HomePage, EventsPage, ErrorPage, EventDetailPage, NewEventPage, EditEventPage, EvetnsRoot, eventItemLoader } from './pages/index';
-import { eventsLoader } from './pages/index';
+import { eventsLoader, newEventAction } from './pages/index';
 
 const Layout = () => {
   return (
@@ -37,7 +37,7 @@ const router = createBrowserRouter([
               { path: 'edit', element: <EditEventPage /> },
             ],
           },
-          { path: 'new', element: <NewEventPage /> },
+          { path: 'new', element: <NewEventPage />, action: newEventAction },
         ],
       },
     ],
