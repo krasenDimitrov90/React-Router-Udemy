@@ -1,8 +1,9 @@
 import MainNavigation from './components/MainNavigation';
 import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { HomePage, EventsPage, ErrorPage, EventDetailPage, NewEventPage, EditEventPage, EvetnsRoot, eventItemLoader } from './pages/index';
-import { eventsLoader, deleteEventAction } from './pages/index';
+import { HomePage, EventsPage, ErrorPage, EventDetailPage, NewEventPage, EditEventPage, EvetnsRoot, NewsletterPage,  } from './pages/index';
+import { eventsLoader, deleteEventAction, eventItemLoader, newsletterAction } from './pages/index';
 import { eventActions } from './components/EventForm';
+
 const Layout = () => {
   return (
     <>
@@ -44,6 +45,7 @@ const router = createBrowserRouter([
           { path: 'new', element: <NewEventPage />, action: eventActions },
         ],
       },
+      { path: 'newsletter', element: <NewsletterPage />, action: newsletterAction },
     ],
   }
 ]);

@@ -5,3 +5,4 @@ export * from './EventsPage';
 export * from './EvetnsRoot';
 export * from './HomePage';
 export * from './NewEventPage';
+export * from './NewsletterPage';
