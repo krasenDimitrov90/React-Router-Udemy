@@ -1,7 +1,7 @@
 import MainNavigation from './components/MainNavigation';
 import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { HomePage, EventsPage, ErrorPage, EventDetailPage, NewEventPage, EditEventPage, EvetnsRoot, eventItemLoader } from './pages/index';
-import { eventsLoader, newEventAction } from './pages/index';
+import { eventsLoader, newEventAction, deleteEventAction } from './pages/index';
 
 const Layout = () => {
   return (
@@ -33,7 +33,11 @@ const router = createBrowserRouter([
             id: 'event-detail',
             loader: eventItemLoader,
             children: [
-              { index: true, element: <EventDetailPage /> },
+              {
+                index: true,
+                element: <EventDetailPage />,
+                action: deleteEventAction
+              },
               { path: 'edit', element: <EditEventPage /> },
             ],
           },
