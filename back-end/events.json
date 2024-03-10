@@ -1,18 +1,1 @@
-{
-    "events": [
-        {
-            "title": "Second event",
-            "image": "https://www.adobe.com/content/dam/www/us/en/events/overview-page/eventshub_evergreen_opengraph_1200x630_2x.jpg",
-            "date": "2024-03-16",
-            "description": "Amazing event",
-            "id": "f23b14c3-b409-470a-a587-98298d42cf14"
-        },
-        {
-            "id": "e1",
-            "title": "A dummy event",
-            "date": "2023-02-22",
-            "image": "https://blog.hubspot.de/hubfs/Germany/Blog_images/Optimize_Marketing%20Events%20DACH%202021.jpg",
-            "description": "Join this amazing event and connect with fellow developers."
-        }
-    ]
-}
+{"events":[{"title":"awd","image":"https://www.wtcmanila.com.ph/wp-content/uploads/2022/08/rear-view-of-audience-in-the-conference-hall-or-se-2021-08-30-06-51-57-utc-1.jpg","date":"2024-03-16","description":"awd","id":"cb3fbcad-9724-4f94-9ad8-eb9a71d01229"},{"title":"Second event","image":"https://www.adobe.com/content/dam/www/us/en/events/overview-page/eventshub_evergreen_opengraph_1200x630_2x.jpg","date":"2024-03-16","description":"Amazing event","id":"f23b14c3-b409-470a-a587-98298d42cf14"},{"id":"e1","title":"A dummy event","date":"2023-02-22","image":"https://blog.hubspot.de/hubfs/Germany/Blog_images/Optimize_Marketing%20Events%20DACH%202021.jpg","description":"Join this amazing event and connect with fellow developers."}]}
